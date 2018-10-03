@@ -1,0 +1,36 @@
+#tab{
+  background-color: #263238;
+  color: grey;
+  width: 100%;
+ /*border: 5px solid red;*/
+}
+#tab-index{
+  width: 10px;
+}
+.jumbotron,container{
+  width: 100%;
+}
+#btn-new{
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+#botones{
+  height: 100%;
+  width: 100%;
+  /*border: 5px solid red;*/
+}
+.fila1{
+  height: 100%;
+}
+#lupita{
+  width: 20px;
+}
+#busca{
+  position:relative;
+    text-align:center;
+}
+label{
+  background-color: white;
+  height: 100%;
+
+}

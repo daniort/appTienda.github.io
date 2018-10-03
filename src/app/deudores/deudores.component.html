@@ -1,0 +1,36 @@
+<div class="container, jumbotron">
+  <div id="botones"class="row">
+      <div class="col">
+          <button type="button" class="btn-info" id="btn-new" name="button">Nuevo</button>
+      </div>
+      <div class="col" id="busca">
+              <input type="text" name="" value="" placeholder="Juanito Alcachofas">
+      </div>
+    </div>
+
+<hr>
+<div class="row, tab">
+<table id="tab" class="table table-hover">
+<thead class="table-success">
+<tr>
+  <th id="tab-index" >Numero</th>
+  <th >Nombre</th>
+  <th id="tab-index" >Deuda</th>
+  <th >Descripcion</th>
+  <th >Notas</th>
+  <th >Fecha</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let id  of ids, let i=index">
+  <td id="tab-index">{{i}}</td>
+  <td>{{nombres[i]}}</td>
+  <th >{{deudas[i]}}</th>
+  <th >{{descrips[i]}}</th>
+  <th >{{notas[i]}}</th>
+</tr>
+</tbody>
+  </table>
+</div>
+
+</div>
