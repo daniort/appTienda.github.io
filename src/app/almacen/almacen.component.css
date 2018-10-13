@@ -1,4 +1,3 @@
-
 .b-vehicle {
   overflow: hidden;
 }
@@ -54,4 +53,13 @@
 }
 .invisible{
   display : none;
+}
+.button{
+    -webkit-transition-duration: 0.4s;
+   transition-duration: 0.4s;
+  color:#2b3e50;
+}
+.button:hover{
+  background-color: #00d1b0; /* Green */
+  color: white;
 }
