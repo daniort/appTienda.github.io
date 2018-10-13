@@ -1,55 +1,43 @@
 
-<div class="container, jumbotron">
+<div class="container, jumbotron ">
 <!-- botones -->
-    <div class="row" >
+<div class="columns is-desktop">
+  <div class="column is-one-third">
+        <button class="button is-primary" routerLink="/nuevacompra" type="submit">
+          <i class="fas fa-plus"></i>
+           Nueva Compra</button>
+  </div>
+  <div class="column is-three-fifths">
 
-      <div class="col" id="busca">
-          <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-info my-2 my-sm-0" type="submit">Nueva Compra</button>
-          </form>
-      </div>
+    <input class="Medium input is-primary" type="text" placeholder="Buscar en Almacén">
+  </div>
+</div>
 
-      <div class="col" id="busca">
-          <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="ejem. Aceite">
-              <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-      </div>
-
-    </div>
 <!-- items -->
-<div class="container margin-top-sm margin-bottom-sm">
-  <div class="b-content">
-    <div class="content"> <h2><i class="fas fa-car"></i> Ver Productos</h2> </div>
-    <div class="columns is-multiline">
-      <div class="column is-one-quarter-desktop is-one-third-tablet" *ngFor="let product of products">
-        <div class="b-vehicle b-vehicle--list-item">
 
+      <div class="columns is-multiline">
+        <div class="column is-one-quarter-desktop is-one-third-tablet" *ngFor="let product of productoitem;let i=index">
+          <div class="b-vehicle b-vehicle list-item">
               <div class="card">
+
                     <div class="card-image">
-                          <a href="#">
-                            <figure class="image is-16by9"><img src="./assets/almacen/aceite123.jpg" id="img_products" alt=""> </figure>
-                          </a>
+                          <a href="#"><figure class="image is-16by9"><img src="./assets/almacen/product.jpg" id="img_products" alt=""> </figure></a>
                     </div>
 
           <div class="card-content">
               <div class="media">
-                <div class="media-left">
-                  <a href="#" class="b-vehicle__manufacturer-char">
-                      {{ product.nombre.charAt(0) }}
-                  </a>
-                </div>
-                <div class="media-content">
-                      <p class="b-vehicle__title title is-4">{{product.nombre}}</p>
-                      <p class="b-vehicle__subtitle subtitle is-6">Cantidad: {{product.cantidad }}</p>
+                  <div class="media-content">
+                    <label for="" class="invisible">{{i}}</label>
+                      <p class="b-vehicle__title title is-5">{{product.nombre}}</p>
+                      <p class="b-vehicle__subtitle subtitle is-6">Cantidad: {{product.cantidad}}</p>
                   </div>
               </div>
               <div class="b-vehicle__content content">
                   <div class="b-vehicle__year">
-                        <p><strong>Precio de Compra: {{ product.costocompra }}</strong></p>
+                        <p><strong>Precio de Compra: ${{ product.compra }}</strong></p>
                   </div>
                   <div class="b-vehicle__year">
-                        <p><strong>Precio de Venta: {{product.costoventa}}</strong></p>
+                        <p><strong>Precio de Venta: ${{product.venta}}</strong></p>
                   </div>
               </div>
         </div>
@@ -57,8 +45,6 @@
 </div>
 </div>
       </div>
-   </div>
- </div>
-</div>
 
+</div>
 </div>

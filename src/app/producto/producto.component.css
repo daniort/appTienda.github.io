@@ -1,0 +1,25 @@
+*{
+  color: white;
+}
+input{
+  color: black;
+}
+.file-label{
+  color: black;
+}
+.hola{
+  align-self: center;
+}
+.space{
+  padding-top: 10%;
+  margin-top: 20%;
+  }
+  .fi{
+    margin-left: 35%;
+    padding-left: 0%;
+    padding-right: 0px;
+  }
+  .fil{
+    padding-left: 30%;
+    padding-right: 0px
+  }
