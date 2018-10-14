@@ -57,6 +57,7 @@
     -webkit-transition-duration: 0.4s;
    transition-duration: 0.4s;
   color:#2b3e50;
+  width: 100%;
 }
 .button:hover{
   background-color: #00d1b0; /* Green */
@@ -76,15 +77,8 @@ input:focus{
 .productoitem{
 font-size: 14pt;
 }
-.card{
-  border: solid 1px;
-border-color: red;
-}
-.is-four-fifths{
-  border: solid 5px;
-border-color: green;
-}
-.info{
+
+  .info{
   border: solid 5px;
 border-color: purple;
 }

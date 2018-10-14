@@ -14,15 +14,16 @@ export class ProductoComponent implements OnInit {
    productos: ProductoInterface={
            nombre:'',
            compra:0,
-           venta:0,
            cantidad:0,
-         };
+           venta:0,
+              };
   constructor(private AlmacenService  : AlmacenService) {
   }
 
   ngOnInit() {
+    
   }
 onGuardarProducto(myForm: NgForm){
   this.AlmacenService.addProduct(this.productos);
-}
+  }
 }

@@ -4,14 +4,13 @@
 }
 input{
   color: black;
-  }
+}
+.inputs{
+  height: 40px;
+}
 input:focus{
   border-left: 7px solid  #00d1b2;
   font-size: 15pt;
-  height: 40px;
-}
-.navbar-end{
-  border-radius: 4px solid red;
 }
 button{
   height: 40px;
@@ -19,14 +18,10 @@ button{
   margin-left: 1%;
   color: black;
   }
-.container{
-  margin-top: 3%;
-  width: 80%;
+  #icon{
+    margin-right: 10%;
   }
-.navbar-end{
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-#icon{
-  margin-right: 10%;
-}
+  .container{
+    margin-top: 3%;
+    width: 80%;
+    }

@@ -1,39 +1,39 @@
 <div class="container">
   <div class="field">
-           <form (ngSubmit)="onGuardarProducto(formNew)" #formNew="ngForm" >
+           <form (ngSubmit)="onGuardarDeuda(formNew)" #formNew="ngForm"  >
 
              <div class="field">
                <label  class="label is-large">
-                 <i class="fas fa-box-open"></i>
-                 Nuevo Producto </label>
+                 <i class="fas fa-credit-card"></i>
+                 Nueva Deuda </label>
                <hr>
              </div>
 
             <div class="field">
-              <label  class="label">Nombre </label>
+              <label  class="label">Nombre del Cliente </label>
               <div class="control">
-                  <input [(ngModel)]="productos.nombre" #nombre="ngModel" name="nombre"  type="email" class="input"  placeholder="Zucaritas">
+                  <input [(ngModel)]="deudas.nombre" #nombre="ngModel" name="nombre"  type="text" class="input"  placeholder="Juanito Alcachofas">
               </div>
             </div>
 
             <div class="field">
-              <label  class="label">Piezas Adquiridas</label>
+              <label  class="label">Cantidad</label>
               <div class="control">
-                <input [(ngModel)]="productos.cantidad" #cantidad="ngModel" name="cantidad" type="number" class="input"  placeholder="0.00">
+                <input [(ngModel)]="deudas.cantidad" #cantidad="ngModel" name="cantidad" type="number" class="input"  placeholder="$000.00">
               </div>
             </div>
 
             <div class="field">
-              <label  class="label">Precio de Compra</label>
+              <label  class="label">Descripcion</label>
               <div class="control">
-                <input [(ngModel)]="productos.compra" #compra="ngModel" name="compra" type="number" class="input" placeholder="$000.00">
+                <input [(ngModel)]="deudas.descripcion" #descripcion="ngModel" name="descripcion" type="text" class="input" placeholder="Llevo 4 cervezas">
               </div>
             </div>
 
             <div class="field">
-              <label  class="label">Precio de Venta</label>
+              <label  class="label">Nota</label>
               <div class="control">
-                <input [(ngModel)]="productos.venta" #venta="ngModel" name="venta" type="number" class="input" placeholder="$000.00">
+                <input [(ngModel)]="deudas.nota" #nota="ngModel" name="nota" type="text" class="input" placeholder="Paga Mañana">
               </div>
             </div>
 
@@ -41,13 +41,14 @@
               <hr>
             </div>
 
+
             <div class="navbar-end">
               <button type="submit" class="button is-primary" name="button"><i class="fas fa-save" id="icon"></i> Guardar</button>
               <ng-template #desactivado>
                 <button type="submit" class="button is-primary" name="button" disabled><i class="fas fa-save" id="icon"></i> Guardar</button>
               </ng-template>
               <button type="reset"  class="button is-info" name="button" ><i class="fas fa-eraser" id="icon"></i> Limpiar</button>
-              <button type="button" routerLink="/almacen" class="button is-danger" name="button" ><i class="fas fa-ban" id="icon"></i>Cancelar</button>
+              <button type="button" routerLink="/deudores" class="button is-danger" name="button" ><i class="fas fa-ban" id="icon"></i>Cancelar</button>
             </div>
 
 

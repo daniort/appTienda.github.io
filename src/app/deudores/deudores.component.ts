@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ClienteInterface} from  ".././modelos/deudorinterface";
+import {DeudorService} from ".././servicios/deudor.service";
 
 @Component({
   selector: 'app-deudores',
@@ -7,19 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deudores.component.css']
 })
 export class DeudoresComponent implements OnInit {
-  ids:number[];
-  nombres:string[];
-  deudas:number[];
-  descrips:string[];
-  notas:string[];
-  constructor() {
-  this.ids=[1,2,3,4,5,];
-  this.nombres= ['Maria Morelos', 'jose Ruiz', 'juan Juanito','raul','jorge','micky'];
-  this.deudas=[100,28,20,10,90];
-  this.descrips= ['huevos', 'pan', 'leche','libreta','mochila'];
-  this.notas=['soy una nota','dijo que venia al dia siguiente'];
+  clienteitem: ClienteInterface[];
+  constructor( public DeudorService: DeudorService  ) {
 }
   ngOnInit() {
+      this.DeudorService.getDeudas().subscribe(deudas =>{
+        this.clienteitem=deudas;
+        console.log("debi cargar ya ");
+        console.log(this.clienteitem);
+        console.log("Arreglo de Deudas Obtenidos ");
+      });
   }
-
 }

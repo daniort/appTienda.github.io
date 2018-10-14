@@ -34,3 +34,35 @@ label{
   height: 100%;
 
 }
+input{
+  color: black;
+  height: 40px
+}
+input:focus{
+  border-left: 7px solid  #00d1b2;
+  }
+  .fas{
+    margin-right: 4%;
+    margin-left: 3%;
+  }
+  .button{
+      -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+    color:#2b3e50;
+    width: 100%;
+  }
+  .button:hover{
+    background-color: #00d1b0; /* Green */
+    color: white;
+  }
+  .inputs{
+    height: 40px;
+  }
+  input:focus{
+    border-left: 7px solid  #00d1b2;
+    font-size: 15pt;
+  }
+  .botones{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
