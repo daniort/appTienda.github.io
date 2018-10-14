@@ -3,23 +3,28 @@
 }
 input{
   color: black;
+  height: 40px
 }
-.file-label{
+input:focus{
+  border-left: 7px solid  #00d1b2;
+  }
+.navbar-end{
+  border-radius: 4px solid red;
+}
+button{
+  height: 40px;
+  width: 12%;
+  margin-left: 1%;
   color: black;
+  }
+.container{
+  margin-top: 3%;
+  width: 80%;
+  }
+.navbar-end{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.hola{
-  align-self: center;
+.fas{
+  margin-right: 10%;
 }
-.space{
-  padding-top: 10%;
-  margin-top: 20%;
-  }
-  .fi{
-    margin-left: 35%;
-    padding-left: 0%;
-    padding-right: 0px;
-  }
-  .fil{
-    padding-left: 30%;
-    padding-right: 0px
-  }

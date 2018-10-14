@@ -48,8 +48,7 @@
   /*text-align: right;*/
 }
 .card-content{
-  color: red;
-
+  color: Black;
 }
 .invisible{
   display : none;
@@ -62,4 +61,34 @@
 .button:hover{
   background-color: #00d1b0; /* Green */
   color: white;
+}
+.inputs{
+  height: 40px;
+}
+input:focus{
+  border-left: 7px solid  #00d1b2;
+  font-size: 15pt;
+}
+.botones{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.productoitem{
+font-size: 14pt;
+}
+.card{
+  border: solid 1px;
+border-color: red;
+}
+.is-four-fifths{
+  border: solid 5px;
+border-color: green;
+}
+.info{
+  border: solid 5px;
+border-color: purple;
+}
+.fas{
+  margin-right: 4%;
+  margin-left: 3%;
 }
