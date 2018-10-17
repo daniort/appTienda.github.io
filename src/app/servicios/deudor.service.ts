@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { ClienteInterface } from  "../modelos/deudorinterface";
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
+import { ClienteComponent } from '../cliente/cliente.component';
 import {Observable} from 'rxjs';
 import {map} from   'rxjs/operators';
-import { ClienteComponent } from '../cliente/cliente.component';
+
 
 @Injectable({
   providedIn: 'root'

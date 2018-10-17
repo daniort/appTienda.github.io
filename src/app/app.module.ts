@@ -15,9 +15,11 @@ import { DeudoresComponent } from './deudores/deudores.component';
 import { AlmacenComponent } from './almacen/almacen.component';
 import { CajaComponent } from './caja/caja.component';
 import { ProductoComponent } from './producto/producto.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 import {AlmacenService} from './servicios/almacen.service';
-import { ClienteComponent } from './cliente/cliente.component';
+import { AuthService } from './servicios/auth.service';
+import { DeudorService } from './servicios/deudor.service';
 
 const routes: Routes = [
      { path: '', component: HomeComponent },
@@ -42,12 +44,11 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-
     RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(environment.firebaseConfig, 'appTiendaBD'),
     AngularFirestoreModule,
   ],
-  providers: [AlmacenService],
+  providers: [AlmacenService,AuthService,DeudorService],
   bootstrap: [AppComponent]
 })
 
